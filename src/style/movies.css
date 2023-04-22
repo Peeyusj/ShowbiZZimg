@@ -1,0 +1,68 @@
+.img1 img{
+    width:35vh;
+border-radius: 6px;
+height: 40vh;
+margin-inline:auto;
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-inline: auto;
+    padding-top: 5%;
+}
+.innerdiv{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+display: flex;
+margin: 10px 15px;
+
+
+}
+.titl{
+    text-align: initial;
+    font-size:1.2rem;
+    color: white;
+    text-shadow:3px 3px 6px rgba(0, 0, 0, 0.777) ;
+}
+.outer>div:hover{
+    transform: translateY(-10px);
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+}
+.outer>div:nth-child(3n):hover{
+    transform: translate(-10px,-10px);
+   transition-duration: 0.4s;
+   transition-timing-function: ease-in-out;
+   transition-property: all;
+}
+.outer>div:nth-child(3n+1):hover{
+    transform: translate(10px,-10px);
+   transition-duration: 0.4s;
+   animation-timing-function: ease-in-out;
+}
+.img2{
+    position: relative;
+    top: 59px;
+    left: 142px;
+    cursor: pointer;
+}
+.img2 img{
+width: 1.7rem;
+height: 2.1rem;
+}
+.downl{
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    visibility: hidden;
+    position: relative;
+    right: 70px;
+}
+.img2:hover .downl{
+    visibility: visible;
+}
